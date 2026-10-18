@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>«Курский соловей» на скамье подсудимых</title>
+<meta name="description" content="Надежда Плевицкая и «дело Миллера»: миф, документ, эмигрантская пресса. Интерактивный лонгрид, дашборд в Yandex DataLens и открытая база из 1307 записей.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%238a2a2a' stroke-width='3' transform='rotate(-6 16 16)'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%238a2a2a' font-family='Georgia'%3EП%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Разделы сайта">
+    <a class="brand" href="./" aria-current="page">Курский соловей</a>
+    <a href="longread.html">Лонгрид</a>
+    <a href="dashboard.html">Дашборд</a>
+    <a href="#data">Данные</a>
+    <a href="#method">Методика</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+
+  <header class="hero">
+    <div class="eyebrow">Исследовательский проект · 2026</div>
+    <h1>«Курский соловей» на скамье подсудимых</h1>
+    <p class="sub">Надежда Плевицкая и «дело Миллера»: миф, документ, эмигрантская пресса</p>
+    <p class="lead">Как менялся образ Плевицкой в русском зарубежье — от «голоса оставленной родины» до «предательницы» — и что на самом деле доказал парижский суд 1938 года? Три слоя источников — её собственные мемуары, эмигрантская и французская пресса, документы следствия и ОГПУ–НКВД — сведены в одну базу, где у каждой записи есть источник и оценка достоверности.</p>
+    <div class="stamp">Миф · Документ · Пресса</div>
+
+    <div class="doors">
+      <a class="door" href="longread.html">
+        <span class="num">I</span>
+        <h3>Интерактивный лонгрид</h3>
+        <p>История в картах и схемах: путь от Винникова до Ренна, поминутная реконструкция 22 сентября 1937 года на карте Парижа, граф связей по делу, документы, пресса и память.</p>
+        <span class="go">Читать →</span>
+      </a>
+      <a class="door" href="dashboard.html">
+        <span class="num">II</span>
+        <h3>Дашборд в Yandex DataLens</h3>
+        <p>Девять вкладок с фильтрами: карты жизни, гастролей и Парижа, записи и репертуар, документы и участники дела, образ в прессе, достоверность источников. С путеводителем по всем виджетам.</p>
+        <span class="go">Открыть →</span>
+      </a>
+      <a class="door" href="#data">
+        <span class="num">III</span>
+        <h3>Открытые данные</h3>
+        <p>13 таблиц в формате CSV: события, концерты, записи, хроника дела, документы, участники и связи, публикации прессы, объекты памяти и полный список источников.</p>
+        <span class="go">К данным ↓</span>
+      </a>
+    </div>
+  </header>
+
+  <section aria-labelledby="facts-h">
+    <div class="eyebrow">База проекта</div>
+    <h2 id="facts-h">Что собрано</h2>
+    <div class="facts">
+      <div class="fact"><b>1307</b><span>датированных записей</span></div>
+      <div class="fact"><b>217</b><span>источников с выходными данными и ссылками</span></div>
+      <div class="fact"><b>185</b><span>событий жизни, 1884–2026</span></div>
+      <div class="fact"><b>113</b><span>концертов и гастролей</span></div>
+      <div class="fact"><b>154</b><span>эпизода дела Миллера</span></div>
+      <div class="fact"><b>77</b><span>публикаций прессы 1909–1940</span></div>
+    </div>
+  </section>
+
+  <section id="data" aria-labelledby="data-h">
+    <div class="eyebrow">Открытые данные</div>
+    <h2 id="data-h">Таблицы</h2>
+    <p class="intro">Все файлы — UTF-8, разделитель — запятая. Их можно открыть в Excel или любом BI-инструменте; на них построены дашборд и лонгрид.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Файл</th><th>Что внутри</th><th>Строк</th></tr></thead>
+        <tbody>
+          <tr><td><a href="data/events.csv">events.csv</a></td><td>События жизни: дата, этап, место, координаты, источник, достоверность, расхождения версий</td><td class="n">185</td></tr>
+          <tr><td><a href="data/concerts.csv">concerts.csv</a></td><td>Концерты и гастроли: город, площадка, тип выступления, с кем, публика</td><td class="n">113</td></tr>
+          <tr><td><a href="data/recordings.csv">recordings.csv</a></td><td>Дискография: фирма, номера матриц и каталога, аккомпанемент, оцифровки</td><td class="n">41</td></tr>
+          <tr><td><a href="data/repertoire.csv">repertoire.csv</a></td><td>Репертуар: жанр, авторы, число известных записей, современные исполнители</td><td class="n">81</td></tr>
+          <tr><td><a href="data/memoirs.csv">memoirs.csv</a></td><td>Мемуары: издания и самые цитируемые эпизоды с оценкой достоверности</td><td class="n">21</td></tr>
+          <tr><td><a href="data/miller_timeline.csv">miller_timeline.csv</a></td><td>Хроника дела Миллера от подготовки до публикации документов, с указанием, чем подтверждён каждый шаг</td><td class="n">154</td></tr>
+          <tr><td><a href="data/miller_routes.csv">miller_routes.csv</a></td><td>Четыре маршрута 22–23 сентября 1937 года по Парижу: время, место, комментарий</td><td class="n">25</td></tr>
+          <tr><td><a href="data/miller_documents.csv">miller_documents.csv</a></td><td>Реестр документов и свидетельств по слоям источников</td><td class="n">92</td></tr>
+          <tr><td><a href="data/miller_people.csv">miller_people.csv</a></td><td>Участники и фигуранты дела: роль, организация, судьба</td><td class="n">90</td></tr>
+          <tr><td><a href="data/miller_relations.csv">miller_relations.csv</a></td><td>Связи между участниками: тип, период, описание</td><td class="n">129</td></tr>
+          <tr><td><a href="data/press.csv">press.csv</a></td><td>Публикации прессы: издание, направление, образ Плевицкой, тон от −2 до +2</td><td class="n">77</td></tr>
+          <tr><td><a href="data/legacy.csv">legacy.csv</a></td><td>Память и культурный след: книги, фильмы, музыка, памятники, музей</td><td class="n">82</td></tr>
+          <tr><td><a href="data/sources.csv">sources.csv</a></td><td>Все источники проекта по четырём корпусам: что из каждого взято</td><td class="n">217</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="method" aria-labelledby="method-h">
+    <div class="eyebrow">Методика</div>
+    <h2 id="method-h">Как читать оценки</h2>
+    <p class="intro">У каждой записи есть источник и оценка достоверности. Там, где источники расходятся — в дате рождения, обстоятельствах встречи со Скоблиным, дате смерти, — расхождение записано отдельно, а не спрятано.</p>
+    <div class="scale">
+      <div style="--c:var(--r1)"><b>1</b>документ</div>
+      <div style="--c:var(--r2)"><b>2</b>несколько независимых источников</div>
+      <div style="--c:var(--r3)"><b>3</b>один источник или только мемуары Плевицкой</div>
+      <div style="--c:var(--r4)"><b>4</b>спорная версия или легенда</div>
+    </div>
+    <ul class="plain">
+      <li>Даты указаны так, как в источнике («05.1916», «≈ 1884»), с пометкой точности и стиля календаря.</li>
+      <li>Корпус прессы — пилотная выборка: публикации собраны по исследованиям и обзорам эмигрантской печати; образ и тон размечены по единой шкале. Следующий шаг — сверка с подшивками «Последних новостей», «Возрождения» и французских газет.</li>
+      <li>Документы ОГПУ–НКВД, где Скоблин проходит как «Фермер», а Плевицкая — как «Фермерша», учтены по публикациям 1990–2000-х годов.</li>
+    </ul>
+  </section>
+
+  <section id="en" lang="en" aria-labelledby="en-h">
+    <div class="eyebrow">English summary</div>
+    <div class="en">
+      <h2 id="en-h">The “Kursk Nightingale” in the Dock: Nadezhda Plevitskaya and the Miller Affair</h2>
+      <p>Nadezhda Plevitskaya (1884–1940), a peasant-born folk singer who sang for Nicholas II and later became the voice of the Russian emigration, was tried in Paris in 1938 for her part in the abduction of General Yevgeny Miller, head of the Russian All-Military Union, on 22 September 1937. She was sentenced to twenty years of hard labour and died in prison in Rennes.</p>
+      <p>The project traces how the émigré and French press turned “the voice of the abandoned homeland” into “the traitor”, and what the court and the later-published OGPU–NKVD files actually show. It combines an interactive long-read, a Yandex DataLens dashboard and an open dataset of 1,307 dated records from 217 sources, each with a source and a reliability rating. The site and the materials are in Russian.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span data-author hidden></span>
+    <span>Данные собраны по открытым источникам; полный список — в <a href="data/sources.csv">sources.csv</a>.</span>
+  </footer>
+</div>
+<script src="config.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
